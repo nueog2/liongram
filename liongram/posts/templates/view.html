@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="/fbv/">새로고침</a><br>
+
+    <form action="" method="GET">
+        <input type="text" name="var">
+        <input type="submit" value="GET 제출">
+    </form>
+<!-- GET, POST를 쓸 때 대문자는 상관없음 -->
+    <form action="" method="POST"> {% csrf_token %}
+        <input type="text" name="var">
+        <input type="submit" value="POST 제출">
+    </form>
+
+</body>
+</html>
+<!-- GET은 일반적으로 데이터 또는 리소스를 받을때. 
+    POST 데이터 추가, 수정, 또는 삭제할 때 사용   -->
+<!-- !누르고 엔터 누르면 html기본 템플릿 자동완섬됨 -->
